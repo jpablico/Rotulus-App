@@ -1,0 +1,31 @@
+@use 'fonts';
+@use 'mixins';
+
+@import '_mixins.scss';
+@import '_fonts.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#header-container {
+
+	#nav-container {
+
+		#logo-container {
+
+			.logo {
+				width: 40px;
+			}
+
+			.logo-title {
+				font-family: $heading-font;
+				font-size: 1.5rem;
+				font-weight: 500;
+				font-style: normal;
+			}
+		}
+	}
+}
