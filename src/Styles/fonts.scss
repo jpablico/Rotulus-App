@@ -1,12 +1,29 @@
-// Roboto Mono
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 700
+// Google Fonts & Material Icons
+.material-symbols-outlined {
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 24,
+	'COLR' 0;
+	font-size: 24px;
+  }
 
-$heading-font: 'Roboto Mono', monospace;
-$paragraph-font: 'Khand', sans-serif;
-$button-font: 'Palanquin', sans-serif;
+  .material-symbols-filled {
+	font-variation-settings:
+	'FILL' 1,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 24;
+	font-size: 24px;
+  }
+  
+  .material-icons-outlined {
+	color: #000;
+	font-size: 25px;
+  }
 
-
+  // Roboto-Mono
 .roboto-mono {
 	font-family: "Roboto Mono", monospace;
 	font-optical-sizing: auto;
@@ -88,4 +105,3 @@ $button-font: 'Palanquin', sans-serif;
 	font-weight: 700;
 	font-style: normal;
   }
-  

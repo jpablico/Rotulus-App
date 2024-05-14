@@ -1,83 +1,19 @@
 /*!***************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/Styles/main.scss ***!
   \***************************************************************************************************************/
-.roboto-mono {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24, "COLR" 0;
+  font-size: 24px;
 }
 
-.khand-light {
-  font-family: "Khand", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+.material-symbols-filled {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-size: 24px;
 }
 
-.khand-regular {
-  font-family: "Khand", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.khand-medium {
-  font-family: "Khand", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.khand-semibold {
-  font-family: "Khand", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.khand-bold {
-  font-family: "Khand", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.palanquin-thin {
-  font-family: "Palanquin", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.palanquin-extralight {
-  font-family: "Palanquin", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.palanquin-light {
-  font-family: "Palanquin", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.palanquin-regular {
-  font-family: "Palanquin", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.palanquin-medium {
-  font-family: "Palanquin", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.palanquin-semibold {
-  font-family: "Palanquin", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.palanquin-bold {
-  font-family: "Palanquin", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+.material-icons-outlined {
+  color: #000;
+  font-size: 25px;
 }
 
 .roboto-mono {
@@ -165,12 +101,36 @@
   box-sizing: border-box;
 }
 
-#header-container #nav-container #logo-container .logo {
-  width: 40px;
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
-#header-container #nav-container #logo-container .logo-title {
+
+#header-container {
+  width: 20vw;
+  height: 100vh;
+  background-color: aqua;
+}
+#header-container .user-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: blue;
+}
+#header-container .user-container .user-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   font-family: "Roboto Mono", monospace;
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-style: normal;
+}
+#header-container .user-container .user-info .user-profile .user-profile-picture {
+  width: 50px;
+  height: 50px;
+  background-color: red;
 }
