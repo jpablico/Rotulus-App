@@ -1,1 +1,1 @@
-07.08.24 - Started using React for components. Foundation setted up for SCSS, React, and webpack.
+07.08.24 - Started using React for components. Foundation setted up for SCSS, React, and webpack. Need to create the main container to push tasks into and dialog box.
