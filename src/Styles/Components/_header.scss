@@ -1,0 +1,46 @@
+@use '../global' as *;
+
+#header-container {
+	width: 20vw;
+	.header-account-wrapper {
+		@include flex(row, flex-start, center);
+		gap: .8rem;
+
+		.header-account-image {
+			height: 34px;
+			width: 34px;
+			border-radius: 25%;
+		}
+
+		.header-account-info {
+			@include text-size($font-size-small);
+			@include text-truncate();
+		}
+	}
+
+	.nav-container {
+		@include flex( column, center, flex-start);
+		gap: 1rem;
+		padding-top: .5rem;
+
+		.nav-button {
+			@include flex(row, center, center);
+			@include text-size($font-size-small);
+			@include text-truncate();
+			padding: .2rem .5rem;
+			border-radius: 5px;
+			background-color: $primary-color;
+			border: none;
+			width: 100%;
+
+			&:hover {
+				background-color: $accent-color;
+			}
+
+		}
+		.nav-item {
+			@include text-size($font-size-body);
+			@include text-truncate();
+		}
+	}
+}

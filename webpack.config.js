@@ -4,10 +4,11 @@ const IgnoreEmitPlugin = require('ignore-emit-webpack-plugin');
 
 module.exports = {
     mode: 'development', // Set mode to development
-    entry:[ './src/Scripts/index.js', './src/Styles/main.scss'], // Add the entry point for styles assuming your entry file is located at src/index.js
+    entry: ['./src/Scripts/index.js', './src/Styles/main.scss'], // Add the entry point for styles assuming your entry file is located at src/index.js
     output: {
         path: path.resolve(__dirname, 'dist'), // Output files in the 'dist' directory
         filename: 'bundle.js', // Bundle all JavaScript into bundle.js
+        publicPath: '/dist/', // Serve files from the 'dist' directory
     },
     module: {
         rules: [
@@ -23,7 +24,7 @@ module.exports = {
             },
             {
                 test: /\.css$/, // Use MiniCssExtractPlugin loader for .css files
-                use: [MiniCssExtractPlugin.loader,'css-loader'],
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
                 test: /\.scss$/, // Add this rule
@@ -31,6 +32,19 @@ module.exports = {
                     MiniCssExtractPlugin.loader, // Extracts CSS into separate files
                     'css-loader', // Translates CSS into CommonJS
                     'sass-loader' // Compiles Sass to CSS
+                ],
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i, // Use file-loader for image files
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'images/',
+                            publicPath: 'images/',
+                        },
+                    },
                 ],
             }
         ],
@@ -45,8 +59,9 @@ module.exports = {
         extensions: ['.js', '.jsx'], // Resolve these extensions automatically
     },
     devServer: {
-        contentBase: path.join(__dirname, 'dist'), // Serve content from 'dist' directory
-        compress: true,
-        port: 9000, // Serve on port 9000
+        static: {
+            directory: path.join(__dirname, 'dist'), // Serve content from 'dist' directory
+        },
+        historyApiFallback: true, // Enable HTML5 History API fallback
     },
 };

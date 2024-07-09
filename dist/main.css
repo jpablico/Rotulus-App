@@ -12,3 +12,35 @@ body {
   margin: 2rem 1rem;
   color: #e7f3f9;
 }
+
+#header-container .header-account-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8rem;
+}
+#header-container .header-account-wrapper .header-account-image {
+  height: 34px;
+  width: 34px;
+  border-radius: 25%;
+}
+#header-container .header-account-wrapper .header-account-info {
+  font-size: 0.75rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#header-container .nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: 1rem;
+}
+#header-container .nav-container .nav-item {
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
