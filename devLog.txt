@@ -1,0 +1,1 @@
+07.08.24 - Started using React for components. Foundation setted up for SCSS, React, and webpack.
