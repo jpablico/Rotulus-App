@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Header } from './Components/header'; // Ensure this is correctly imported as a component
+import Main  from './Components/main';
 import { populateNavList } from './utils';
 import { navItems } from './data';
 
@@ -9,9 +10,15 @@ const container = document.getElementById('app');
 const root = createRoot(container); // Create a root.
 
 // Use the new API to render
-root.render(<Header />);
+root.render(
+  <>
+    <Header />
+    <Main />
+  </>
+);
+
 
 document.addEventListener('DOMContentLoaded', function() {
     populateNavList(navItems);
-	
+    
 });

@@ -32,15 +32,38 @@
 			background-color: $primary-color;
 			border: none;
 			width: 100%;
-
+			cursor: pointer;
+			box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
 			&:hover {
-				background-color: $accent-color;
+				background-color: white;
+				scale: 1.04;
 			}
 
 		}
 		.nav-item {
 			@include text-size($font-size-body);
 			@include text-truncate();
+		}
+
+		.nav-item-active {
+			background-color: $accent-color;
+			color: white;
+		}
+
+		.label-button {
+			@include flex(row, center, center);
+			@include text-size($font-size-tiny);
+			@include text-truncate();
+			padding: .2rem .5rem;
+			border-radius: 5px;
+			background-color: $background-color;
+			border: none;
+			width: 100%;
+			cursor: pointer;
+			&:hover {
+				background-color: white;
+				scale: 1.04;
+			}
 		}
 	}
 }

@@ -12,8 +12,11 @@ function Header() {
 		</div>
 	</div>
 	<nav className='nav-container'>
-		<button className='nav-button' id='addButton' ><span className='material-icons'>add</span>Add task</button>
-		<ul className='nav-list'></ul>
+		<button className='nav-button' id='addButton' >Add task</button>
+		<ul className='nav-list'>
+
+		</ul>
+		<button className='label-button' id='addLabelButton'>Add label</button>
 	</nav>
   </header>;
 }
