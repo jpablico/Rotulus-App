@@ -12,9 +12,17 @@ function Modal(contentType) {
 			</form>
 		</dialog>;
 	} else if(contentType === 'add') {
-
+		return <dialog id="dialog">
+			<form className="dialog-form">
+				<input type="text" value="Label name..." />
+				<button>Cancel</button>
+				<button>OK</button>
+			</form>
+		</dialog>;
 	}
 }
+
+export { Modal };
 
 function openModal(contentType) {
     // Assuming modal and navItem are accessible or passed as parameters
