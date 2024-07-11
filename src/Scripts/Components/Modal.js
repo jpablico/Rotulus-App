@@ -4,44 +4,35 @@ import '../../Styles/main.scss';
 function Modal(contentType) {
 	if(contentType === 'addTask') {
 		console.log('Add Task');
-		let dialog = document.createElement('dialog');
-		dialog.id = 'dialog';
-		dialog.innerHTML = `
-			<form class='dialog-form'>
-				<input type="text"  class='input-element' id='input-data' value="Task name...">
-				
-				<input type='Radio' class='Priority' value='Low'>
-				<div class="button-container">
-					<button class='button-element' value="cancel">Cancel</button>
-					<button class='button-element' value="default">OK</button>
-				</div>
-			</form>
-		`;
-		document.body.appendChild(dialog);
-		
-		return dialog;
-		/*
-		return <dialog id="dialog">
-			<form className="dialog-form">
-				<input type="text" value="Task name..." />
-				<button>Cancel</button>
-				<button>OK</button>
-			</form>
-		</dialog>;
-		*/
+		return (
+			<dialog id="dialog">
+				<form className="dialog-form">
+					<input type="text" className="input-element" id="input-data" defaultValue="Task name..." />
+					<input type="radio" className="Priority" value="Low" />
+					<div className="button-container">
+						<button className="button-element" value="cancel">Cancel</button>
+						<button className="button-element" value="default">OK</button>
+					</div>
+				</form>
+			</dialog>
+		);
 	} else if(contentType === 'add') {
-		return <dialog id="dialog">
-			<form className="dialog-form">
-				<input type="text" value="Label name..." />
-				<button>Cancel</button>
-				<button>OK</button>
-			</form>
-		</dialog>;
+		return (
+			<dialog id="dialog">
+				<form className="dialog-form">
+					<input type="text" className="input-element" defaultValue="Label name..." />
+					<div className="button-container">
+						<button className="button-element" value="cancel">Cancel</button>
+						<button className="button-element" value="default">OK</button>
+					</div>
+				</form>
+			</dialog>
+		);
 	}
 }
 
 function ModalShow() {
-	const dialog = document.querySelector('#dialog');
+	
 	if (dialog) {
 		dialog.showModal();
 	} else {
