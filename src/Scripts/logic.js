@@ -1,4 +1,4 @@
-import { Modal } from "./Components/Modal";
+import { Modal, ModalShow } from "./Components/Modal";
 
 function initializeButtons() {
     const addTaskButton = document.getElementById('addTaskButton');
@@ -7,19 +7,12 @@ function initializeButtons() {
 
     if (addTaskButton) {
         addTaskButton.addEventListener('click', () => {
-			Modal('addTask');
-			dialog.showModal();
-            if (dialog) {
-                Modal('addTask');
-                dialog.showModal();
-            } else {
-                console.error('Dialog not found');
-            }
+            Modal('addTask');
+            ModalShow();   
         });
     } else {
         console.error('Add Task Button not found');
     }
-
     if (addButton) {
         addButton.addEventListener('click', () => {
             if (dialog) {
@@ -33,5 +26,4 @@ function initializeButtons() {
         console.error('+ Button not found');
     }
 }
-
 export { initializeButtons };

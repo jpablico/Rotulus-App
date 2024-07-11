@@ -16,7 +16,6 @@ root.render(
   <>
     <Header />
     <Main />
-    <Modal />
   </>
 );
 

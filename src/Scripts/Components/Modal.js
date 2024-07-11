@@ -4,6 +4,23 @@ import '../../Styles/main.scss';
 function Modal(contentType) {
 	if(contentType === 'addTask') {
 		console.log('Add Task');
+		let dialog = document.createElement('dialog');
+		dialog.id = 'dialog';
+		dialog.innerHTML = `
+			<form class='dialog-form'>
+				<input type="text"  class='input-element' id='input-data' value="Task name...">
+				
+				<input type='Radio' class='Priority' value='Low'>
+				<div class="button-container">
+					<button class='button-element' value="cancel">Cancel</button>
+					<button class='button-element' value="default">OK</button>
+				</div>
+			</form>
+		`;
+		document.body.appendChild(dialog);
+		
+		return dialog;
+		/*
 		return <dialog id="dialog">
 			<form className="dialog-form">
 				<input type="text" value="Task name..." />
@@ -11,6 +28,7 @@ function Modal(contentType) {
 				<button>OK</button>
 			</form>
 		</dialog>;
+		*/
 	} else if(contentType === 'add') {
 		return <dialog id="dialog">
 			<form className="dialog-form">
@@ -22,7 +40,17 @@ function Modal(contentType) {
 	}
 }
 
-export { Modal };
+function ModalShow() {
+	const dialog = document.querySelector('#dialog');
+	if (dialog) {
+		dialog.showModal();
+	} else {
+		console.error('Dialog not found');
+	}
+
+}
+
+export { Modal, ModalShow };
 
 function openModal(contentType) {
     // Assuming modal and navItem are accessible or passed as parameters
