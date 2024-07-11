@@ -1,21 +1,24 @@
-import { Modal } from "./Components/Modal";
+import { taskModal, labelModal, createLabelSelection } from "./Components/Modal";
+import { navItems } from "./data";
 
-function initializeButtons() {
+
+
+function initializeButtons(navItems) {
     const addTaskButton = document.getElementById('addTaskButton');
     const addButton = document.getElementById('addLabelButton');
-    const dialogContainer = document.querySelector('body'); // Or any other container
-
+    const navItems = [...document.querySelectorAll('.nav-item')];
     if (addTaskButton) {
         addTaskButton.addEventListener('click', () => {
-            const dialog = Modal('addTask'); // Assuming Modal returns a DOM node
-
+           document.querySelector('#dialog-task').showModal();
+            
+            createLabelSelection(navItems);
         });
     } else {
         console.error('Add Task Button not found');
     }
     if (addButton) {
         addButton.addEventListener('click', () => {
-            const dialog = Modal('add'); // Assuming Modal returns a DOM node
+            Modal('add'); // Assuming Modal returns a DOM node
         });
     } else {
         console.error('+ Button not found');

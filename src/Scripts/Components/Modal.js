@@ -1,42 +1,35 @@
 import React from "react";
 import '../../Styles/main.scss';
+import { navItems } from "../data";
 
-function Modal(contentType) {
-	const dialog = document.querySelector('#dialog');
-	if(contentType === 'addTask') {
-		console.log('Add Task');
+function taskModal(){
+	console.log('Add Task');
 		const dialog = document.createElement('dialog');
-		dialog.id = 'dialog';
+		dialog.id = 'dialog-task';
 		dialog.innerHTML = `
 			<form class='dialog-form'>
-				<h2 class='dialog-form-title'>Add Task</h2>
-				<input type="text"  class='input-element' id='input-data' value="Task name...">
-				<div class='radio-container'>
-					<div class='radio-selector'>
-						<label for='priorityHigh'>High</label><br>
-						<input type='Radio' class='Priority' id='priorityHigh' value='High'>
-					</div>
-					<div class='radio-selector'>
-						<label for='priorityMedium'>Medium</label><br>
-						<input type='Radio' class='Priority' id='priorityMedium' value='Medium'>
-					</div>
-					<div class='radio-selector'>
-					<label for='priorityLow'>Low</label><br>
-						<input type='Radio' class='Priority' id='priorityLow' value='Low'>
-					</div>
+				<div class='dialog-text-input'>
+					<input type="text"  class='input-element' id='input-data' value="Task name...">
+					<input type="text"  class='input-element' id='input-data' value="Description...">
 				</div>
-                <div class="button-container">
-                    <button class='button-element' value="cancel">Cancel</button>
-                    <button class='button-element' value="default">OK</button>
+                <div class='form-controls-container'>
+					
+					<input type="date" class='input-element' id='input-data' value="Due date...">
+					<input type="time" class='input-element' id='input-data' value="Due time...">
+					<div class='button-container'>
+						<button class='button-element' value="cancel">Cancel</button>
+						<button class='button-element' value="default">OK</button>
+					</div>
                 </div>
 			</form>
 		`;
 		document.body.appendChild(dialog);
-		dialog.showModal();
-	} else if(contentType === 'add') {
-		console.log('Add');
+}
+
+function labelModal(){
+	console.log('Add');
 		const dialog = document.createElement('dialog');
-		dialog.id = 'dialog';
+		dialog.id = 'dialog-label';
 		dialog.innerHTML = `
 			<form class='dialog-form'>
 				<input type="text"  class='input-element' id='input-data' value="Label name...">
@@ -47,9 +40,24 @@ function Modal(contentType) {
 			</form>
 		`;
 		document.body.appendChild(dialog);
-		dialog.showModal();
-	}
 }
 
+function createLabelSelection(navItems) {
+	
+	const formControls = document.querySelector('.form-controls-container');
 
-export { Modal };
+	const labelOptions = navItems.map((label, index) => (
+		`<option key=${index} value=${label}>${label}</option>`
+	));
+
+	const select = document.createElement('select');
+	select.className = 'select-element';
+	select.innerHTML = labelOptions.join('');
+	formControls.appendChild(select);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	createLabelSelection(navItems);
+});
+
+export { taskModal, labelModal, createLabelSelection};
