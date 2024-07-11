@@ -1,0 +1,28 @@
+@use '../global' as *;
+
+#dialog {
+	margin: auto;
+	border: none;
+	border-radius: 10px;
+
+.dialog-form {
+	@include flex(column, center, center);
+	margin: auto;
+
+	.dialog-form-title {
+		width: 100%;
+		font-size: 1.5rem;
+		font-weight: bold;
+		text-align: center;
+		background-color: $primary-color;
+	}
+	.radio-container {
+		@include flex(row, center, center);
+		gap: 1rem;
+		.radio-selector {
+			@include flex(column, center, center);
+		}
+	}
+	
+}
+}

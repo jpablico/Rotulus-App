@@ -2,49 +2,6 @@ import React from "react";
 import '../../Styles/main.scss';
 
 function Modal(contentType) {
-	if(contentType === 'addTask') {
-		console.log('Add Task');
-		return (
-			<dialog id="dialog">
-				<form className="dialog-form">
-					<input type="text" className="input-element" id="input-data" defaultValue="Task name..." />
-					<input type="radio" className="Priority" value="Low" />
-					<div className="button-container">
-						<button className="button-element" value="cancel">Cancel</button>
-						<button className="button-element" value="default">OK</button>
-					</div>
-				</form>
-			</dialog>
-		);
-	} else if(contentType === 'add') {
-		return (
-			<dialog id="dialog">
-				<form className="dialog-form">
-					<input type="text" className="input-element" defaultValue="Label name..." />
-					<div className="button-container">
-						<button className="button-element" value="cancel">Cancel</button>
-						<button className="button-element" value="default">OK</button>
-					</div>
-				</form>
-			</dialog>
-		);
-	}
-}
-
-function ModalShow() {
-	
-	if (dialog) {
-		dialog.showModal();
-	} else {
-		console.error('Dialog not found');
-	}
-
-}
-
-export { Modal, ModalShow };
-
-function openModal(contentType) {
-    // Assuming modal and navItem are accessible or passed as parameters
 	const dialog = document.querySelector('#dialog');
 	if(contentType === 'addTask') {
 		console.log('Add Task');
@@ -52,9 +9,22 @@ function openModal(contentType) {
 		dialog.id = 'dialog';
 		dialog.innerHTML = `
 			<form class='dialog-form'>
+				<h2 class='dialog-form-title'>Add Task</h2>
 				<input type="text"  class='input-element' id='input-data' value="Task name...">
-                
-                <input type='Radio' class='Priority' value='Low'>
+				<div class='radio-container'>
+					<div class='radio-selector'>
+						<label for='priorityHigh'>High</label><br>
+						<input type='Radio' class='Priority' id='priorityHigh' value='High'>
+					</div>
+					<div class='radio-selector'>
+						<label for='priorityMedium'>Medium</label><br>
+						<input type='Radio' class='Priority' id='priorityMedium' value='Medium'>
+					</div>
+					<div class='radio-selector'>
+					<label for='priorityLow'>Low</label><br>
+						<input type='Radio' class='Priority' id='priorityLow' value='Low'>
+					</div>
+				</div>
                 <div class="button-container">
                     <button class='button-element' value="cancel">Cancel</button>
                     <button class='button-element' value="default">OK</button>
@@ -78,10 +48,8 @@ function openModal(contentType) {
 		`;
 		document.body.appendChild(dialog);
 		dialog.showModal();
-	} else {
-		console.log('Default');
 	}
-	console.log('openModal');
-    updateNavItemContent(); // Update the nav item content
-    modal.style.display = 'block'; // Show the modal
 }
+
+
+export { Modal };
