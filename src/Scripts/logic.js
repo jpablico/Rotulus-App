@@ -3,7 +3,7 @@ import { navItems } from "./data";
 
 
 
-function initializeButtons(navItems) {
+function initializeButtons() {
     const addTaskButton = document.getElementById('addTaskButton');
     const addButton = document.getElementById('addLabelButton');
     const navItems = [...document.querySelectorAll('.nav-item')];

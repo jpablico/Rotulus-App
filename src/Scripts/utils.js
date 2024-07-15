@@ -1,8 +1,8 @@
 import { navItems } from './data';
 
 function populateNavList(navItems) {
-	const navList = document.querySelector('.nav-list');
-    navList.innerHTML = ''; 
+    const navList = document.querySelector('.nav-list')
+    navList.innerHTML = '';
     navItems.forEach(item => {
         const li = document.createElement('li');
         li.className = 'nav-item';

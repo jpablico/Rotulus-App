@@ -43,17 +43,16 @@ function labelModal(){
 }
 
 function createLabelSelection(navItems) {
-	
-	const formControls = document.querySelector('.form-controls-container');
-
-	const labelOptions = navItems.map((label, index) => (
-		`<option key=${index} value=${label}>${label}</option>`
-	));
-
-	const select = document.createElement('select');
-	select.className = 'select-element';
-	select.innerHTML = labelOptions.join('');
-	formControls.appendChild(select);
+    const formControls = document.querySelector('.form-controls-container');
+    //console.log('Label Selection', navItems); 
+    // Map the navItems to option elements, assuming each item has a Label property
+    const labelOptions = navItems.map((item, index) => (
+        `<option key=${index} value="${item.Label}">${item.Label}</option>`
+    ));
+    const select = document.createElement('select');
+    select.className = 'select-element';
+    select.innerHTML = labelOptions.join('');
+    formControls.appendChild(select);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
