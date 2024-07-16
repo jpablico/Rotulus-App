@@ -10,8 +10,6 @@ function initializeButtons() {
     if (addTaskButton) {
         addTaskButton.addEventListener('click', () => {
            document.querySelector('#dialog-task').showModal();
-            
-            createLabelSelection(navItems);
         });
     } else {
         console.error('Add Task Button not found');

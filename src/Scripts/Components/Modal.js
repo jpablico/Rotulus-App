@@ -3,7 +3,6 @@ import '../../Styles/main.scss';
 import { navItems } from "../data";
 
 function taskModal(){
-	console.log('Add Task');
 		const dialog = document.createElement('dialog');
 		dialog.id = 'dialog-task';
 		dialog.innerHTML = `
@@ -15,7 +14,6 @@ function taskModal(){
                 <div class='form-controls-container'>
 					
 					<input type="date" class='input-element' id='input-data' value="Due date...">
-					<input type="time" class='input-element' id='input-data' value="Due time...">
 					<div class='button-container'>
 						<button class='button-element' value="cancel">Cancel</button>
 						<button class='button-element' value="default">OK</button>
@@ -27,7 +25,6 @@ function taskModal(){
 }
 
 function labelModal(){
-	console.log('Add');
 		const dialog = document.createElement('dialog');
 		dialog.id = 'dialog-label';
 		dialog.innerHTML = `
@@ -44,7 +41,6 @@ function labelModal(){
 
 function createLabelSelection(navItems) {
     const formControls = document.querySelector('.form-controls-container');
-    //console.log('Label Selection', navItems); 
     // Map the navItems to option elements, assuming each item has a Label property
     const labelOptions = navItems.map((item, index) => (
         `<option key=${index} value="${item.Label}">${item.Label}</option>`
@@ -59,4 +55,4 @@ document.addEventListener('DOMContentLoaded', () => {
 	createLabelSelection(navItems);
 });
 
-export { taskModal, labelModal, createLabelSelection};
+export { taskModal, labelModal, createLabelSelection };
