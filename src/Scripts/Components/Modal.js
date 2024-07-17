@@ -9,11 +9,14 @@ function taskModal(){
 			<form class='dialog-form'>
 				<div class='dialog-text-input'>
 					<input type="text"  class='input-element' id='input-data' value="Task name...">
+					<hr class='input-separator'/>
 					<input type="text"  class='input-element' id='input-data' value="Description...">
 				</div>
                 <div class='form-controls-container'>
-					
-					<input type="date" class='input-element' id='input-data' value="Due date...">
+					<div class='label-date-container'>
+						<!-- Label selection will be inserted here -->
+						<input type="date" class='input-element' id='input-data' value="Due date...">
+					</div>
 					<div class='button-container'>
 						<button class='button-element' value="cancel">Cancel</button>
 						<button class='button-element' value="default">OK</button>
@@ -40,15 +43,15 @@ function labelModal(){
 }
 
 function createLabelSelection(navItems) {
-    const formControls = document.querySelector('.form-controls-container');
-    // Map the navItems to option elements, assuming each item has a Label property
-    const labelOptions = navItems.map((item, index) => (
-        `<option key=${index} value="${item.Label}">${item.Label}</option>`
-    ));
-    const select = document.createElement('select');
-    select.className = 'select-element';
-    select.innerHTML = labelOptions.join('');
-    formControls.appendChild(select);
+	const formControls = document.querySelector('.label-date-container');
+	// Map the navItems to option elements, assuming each item has a Label property
+	const labelOptions = navItems.map((item, index) => (
+		`<option key=${index} value="${item.Label}">${item.Label}</option>`
+	));
+	const select = document.createElement('select');
+	select.className = 'select-element';
+	select.innerHTML = labelOptions.join('');
+	formControls.insertBefore(select, formControls.firstChild);
 }
 
 document.addEventListener('DOMContentLoaded', () => {

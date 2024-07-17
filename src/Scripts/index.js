@@ -1,11 +1,11 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Header } from './Components/Header'; // Ensure this is correctly imported as a component
-import Main  from './Components/main';
 import { taskModal, labelModal } from './Components/Modal';
 import { populateNavList } from './utils';
 import { navItems } from './data';
 import { initializeButtons } from './logic';
+import { Main } from './Components/Main';
 
 // Select a dedicated container instead of 'body'
 const container = document.getElementById('app');

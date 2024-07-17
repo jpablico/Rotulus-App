@@ -3,6 +3,7 @@
 07.10.24 - Tried to use Babel as a compiler. Significantly complicated the project as it was, reverted changes.
 07.11.24 - Dialog styling needs work. Current one being worked on is 'addTask', buttons should be worked next. The Javascript logic to push the data needs to be created and tested. Build constructor for this.
 
+07.17.25 - SCSS for task dialog completed. Time to work on form submition.
 Project Structure - Each component of the App will be broken up. And called on load. Flow and UML diagrams added to Figma. 
 
 
