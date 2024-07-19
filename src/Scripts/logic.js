@@ -29,6 +29,11 @@ function submitForm() {
     const form = document.querySelector('.dialog-form');
     form.addEventListener('submit', (e) => {
         e.preventDefault();
+        const taskName = document.getElementById('input-data').value;  
+        const taskDescription = document.getElementById('input-data').value;
+        const dueDate = document.getElementById('input-data').value;
+        
+
         const formData = new FormData(form);
         const data = {};
         for (const [key, value] of formData.entries()) {
