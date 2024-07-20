@@ -18,5 +18,27 @@ function populateNavList(navItems) {
     });
 }
 
+function updateNavItemContent(navItem) {
+    const main = document.querySelector('.main');
+    main.innerHTML = '';
+    const filteredItems = navItems.filter(item => item.Label === navItem.textContent);
+    filteredItems.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'main-item';
+        div.textContent = item.Content;
+        main.appendChild(div);
+    });
+}
+
+function populateTaskList() {
+    const taskList = document.querySelector('.task-list');
+    taskList.innerHTML = '';
+    taskArray.forEach(task => {
+        const li = document.createElement('li');
+        li.className = 'task-item';
+        li.textContent = task.taskName;
+        taskList.appendChild(li);
+    });
+}
 
 export { populateNavList }
