@@ -19,7 +19,7 @@ function populateNavList(navItems) {
 }
 
 function updateNavItemContent(navItem) {
-    const main = document.querySelector('.main');
+    const main = document.querySelector('#main');
     main.innerHTML = '';
     const filteredItems = navItems.filter(item => item.Label === navItem.textContent);
     filteredItems.forEach(item => {

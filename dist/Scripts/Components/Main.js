@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+exports.Main = Main;
 var _react = _interopRequireDefault(require("react"));
 require("../../Styles/main.scss");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
@@ -14,4 +14,3 @@ function Main() {
     className: "main-title"
   }, "Tasks"));
 }
-var _default = exports["default"] = Main;

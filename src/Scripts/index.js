@@ -23,5 +23,6 @@ taskModal();
 labelModal();
 document.addEventListener('DOMContentLoaded', function() {
     populateNavList(navItems);
+    console.log('DOM fully loaded and parsed');
     initializeButtons();
 });
