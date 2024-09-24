@@ -6,5 +6,4 @@
 07.17.25 - SCSS for task dialog completed. Time to work on form submition.
 Project Structure - Each component of the App will be broken up. And called on load. Flow and UML diagrams added to Figma. 
 
-
-
+09.24.25 - Coming back to project. 

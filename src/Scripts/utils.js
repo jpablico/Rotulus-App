@@ -12,7 +12,7 @@ function populateNavList(navItems) {
                 navItem.classList.remove('active');
             });
             event.target.classList.add('active');
-            updateNavItemContent(event.target);
+           
         });
         navList.appendChild(li);
     });

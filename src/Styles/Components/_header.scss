@@ -40,10 +40,18 @@
 			}
 
 		}
-		.nav-item {
-			@include text-size($font-size-body);
-			@include text-truncate();
+
+		.nav-list {
+			.nav-item {
+				@include text-size($font-size-body);
+				@include text-truncate();
+				cursor: pointer; // Add cursor pointer here
+			}
+			.nav-item:hover {
+				color: white;
+			}
 		}
+	
 
 		.nav-item-active {
 			background-color: $accent-color;
