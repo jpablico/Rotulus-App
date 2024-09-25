@@ -10,13 +10,43 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/Scripts/Components/header.js":
+/***/ "./src/Scripts/Components/Header.js":
 /*!******************************************!*\
-  !*** ./src/Scripts/Components/header.js ***!
+  !*** ./src/Scripts/Components/Header.js ***!
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Header: () => (/* binding */ Header)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Styles/main.scss */ \"./src/Styles/main.scss\");\n/* harmony import */ var _Assets_portraitJoshP_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Assets/portraitJoshP.jpeg */ \"./src/Assets/portraitJoshP.jpeg\");\n\n\n\nfunction Header() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"header\", {\n    id: \"header-container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"header-account-wrapper\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n    src: _Assets_portraitJoshP_jpeg__WEBPACK_IMPORTED_MODULE_2__,\n    alt: \"User profile picture\",\n    \"class\": \"header-account-image\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"header-account-info\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h2\", {\n    \"class\": \"header-account-name\"\n  }, \"Josh Pablico\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", {\n    \"class\": \"header-account-email\"\n  }, \"jbpablico@gmail.com\"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"nav\", {\n    className: \"nav-container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"button\", {\n    className: \"nav-button\",\n    id: \"addButton\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", {\n    className: \"material-icons\"\n  }, \"add\"), \"Add task\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", {\n    className: \"nav-list\"\n  })));\n}\n\n\n//# sourceURL=webpack://Rotulus-App/./src/Scripts/Components/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Header: () => (/* binding */ Header)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Styles/main.scss */ \"./src/Styles/main.scss\");\n/* harmony import */ var _Assets_portraitJoshP_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Assets/portraitJoshP.jpeg */ \"./src/Assets/portraitJoshP.jpeg\");\n\n\n\nfunction Header() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"header\", {\n    id: \"header-container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"header-account-wrapper\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n    src: _Assets_portraitJoshP_jpeg__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n    alt: \"User profile picture\",\n    className: \"header-account-image\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"header-account-info\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h2\", {\n    className: \"header-account-name\"\n  }, \"Josh Pablico\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", {\n    className: \"header-account-email\"\n  }, \"jbpablico@gmail.com\"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"nav\", {\n    className: \"nav-container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"button\", {\n    className: \"nav-button\",\n    id: \"addTaskButton\"\n  }, \"Add task\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", {\n    className: \"nav-list\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"button\", {\n    className: \"label-button\",\n    id: \"addLabelButton\"\n  }, \"Add label\")));\n}\n\n\n//# sourceURL=webpack://Rotulus-App/./src/Scripts/Components/Header.js?");
+
+/***/ }),
+
+/***/ "./src/Scripts/Components/Main.js":
+/*!****************************************!*\
+  !*** ./src/Scripts/Components/Main.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Main: () => (/* binding */ Main)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Styles/main.scss */ \"./src/Styles/main.scss\");\n\n\nfunction Main() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"main\", {\n    id: \"main-container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h1\", {\n    className: \"main-title\"\n  }, \"Tasks\"));\n}\n\n\n//# sourceURL=webpack://Rotulus-App/./src/Scripts/Components/Main.js?");
+
+/***/ }),
+
+/***/ "./src/Scripts/Components/Modal.js":
+/*!*****************************************!*\
+  !*** ./src/Scripts/Components/Modal.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createLabelSelection: () => (/* binding */ createLabelSelection),\n/* harmony export */   labelModal: () => (/* binding */ labelModal),\n/* harmony export */   taskModal: () => (/* binding */ taskModal)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Styles/main.scss */ \"./src/Styles/main.scss\");\n/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data */ \"./src/Scripts/data.js\");\n\n\n\nfunction taskModal() {\n  var dialog = document.createElement('dialog');\n  dialog.id = 'dialog-task';\n  dialog.innerHTML = \"\\n\\t\\t\\t<form class='dialog-form'>\\n\\t\\t\\t\\t<div class='dialog-text-input'>\\n\\t\\t\\t\\t\\t<input type=\\\"text\\\"  class='input-element' id='input-data-task-name' value=\\\"Task name...\\\">\\n\\t\\t\\t\\t\\t<hr class='input-separator'/>\\n\\t\\t\\t\\t\\t<input type=\\\"text\\\"  class='input-element' id='input-data-task-description' value=\\\"Description...\\\">\\n\\t\\t\\t\\t</div>\\n                <div class='form-controls-container'>\\n\\t\\t\\t\\t\\t<div class='label-date-container'>\\n\\t\\t\\t\\t\\t\\t<!-- Label selection will be inserted here -->\\n\\t\\t\\t\\t\\t\\t<input type=\\\"date\\\" class='input-element' id='input-data-due-date' value=\\\"Due date...\\\">\\n\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t<div class='button-container'>\\n\\t\\t\\t\\t\\t\\t<button class='button-element' value=\\\"cancel\\\">Cancel</button>\\n\\t\\t\\t\\t\\t\\t<button class='button-element' value=\\\"default\\\">OK</button>\\n\\t\\t\\t\\t\\t</div>\\n                </div>\\n\\t\\t\\t</form>\\n\\t\\t\";\n  document.body.appendChild(dialog);\n}\nfunction labelModal() {\n  var dialog = document.createElement('dialog');\n  dialog.id = 'dialog-label';\n  dialog.innerHTML = \"\\n\\t\\t\\t<form class='dialog-form'>\\n\\t\\t\\t\\t<input type=\\\"text\\\"  class='input-element' id='input-data' value=\\\"Label name...\\\">\\n\\t\\t\\t\\t<div class='button-container'>\\n\\t\\t\\t\\t\\t<button class='button-element' value=\\\"cancel\\\">Cancel</button>\\n\\t\\t\\t\\t\\t<button class='button-element' value=\\\"default\\\">OK</button>\\n\\t\\t\\t\\t</div>\\n\\t\\t\\t</form>\\n\\t\\t\";\n  document.body.appendChild(dialog);\n}\nfunction createLabelSelection(navItems) {\n  var formControls = document.querySelector('.label-date-container');\n  // Map the navItems to option elements, assuming each item has a Label property\n  var labelOptions = navItems.map(function (item, index) {\n    return \"<option key=\".concat(index, \" id='input-data-label'value=\\\"\").concat(item.Label, \"\\\">\").concat(item.Label, \"</option>\");\n  });\n  var select = document.createElement('select');\n  select.className = 'select-element';\n  select.innerHTML = labelOptions.join('');\n  formControls.insertBefore(select, formControls.firstChild);\n}\ndocument.addEventListener('DOMContentLoaded', function () {\n  createLabelSelection(_data__WEBPACK_IMPORTED_MODULE_2__.navItems);\n});\n\n\n//# sourceURL=webpack://Rotulus-App/./src/Scripts/Components/Modal.js?");
+
+/***/ }),
+
+/***/ "./src/Scripts/data.js":
+/*!*****************************!*\
+  !*** ./src/Scripts/data.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   navItems: () => (/* binding */ navItems)\n/* harmony export */ });\nvar navItems = [{\n  Label: 'All'\n}, {\n  Label: 'Completed'\n}, {\n  Label: 'Temporary'\n}, {\n  Label: 'Permanent'\n}];\nvar taskArray = [{\n  TaskName: 'Task 1',\n  TaskDescription: 'Description 1',\n  DueDate: '2021-12-31',\n  Label: 'All'\n}, {\n  TaskName: 'Task 2',\n  TaskDescription: 'Description 2',\n  DueDate: '2021-12-31',\n  Label: 'Completed'\n}, {\n  TaskName: 'Task 3',\n  TaskDescription: 'Description 3',\n  DueDate: '2021-12-31',\n  Label: 'Temporary'\n}, {\n  TaskName: 'Task 4',\n  TaskDescription: 'Description 4',\n  DueDate: '2021-12-31',\n  Label: 'Permanent'\n}];\n\n\n//# sourceURL=webpack://Rotulus-App/./src/Scripts/data.js?");
 
 /***/ }),
 
@@ -26,7 +56,37 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _Components_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Components/header */ \"./src/Scripts/Components/header.js\");\n\n\n // Ensure this is correctly imported as a component\n\n// Select a dedicated container instead of 'body'\nvar container = document.getElementById('app');\nvar root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(container); // Create a root.\n\n// Use the new API to render\nroot.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Components_header__WEBPACK_IMPORTED_MODULE_2__.Header, null));\n\n//# sourceURL=webpack://Rotulus-App/./src/Scripts/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _Components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Components/Header */ \"./src/Scripts/Components/Header.js\");\n/* harmony import */ var _Components_Modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Components/Modal */ \"./src/Scripts/Components/Modal.js\");\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utils */ \"./src/Scripts/utils.js\");\n/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./data */ \"./src/Scripts/data.js\");\n/* harmony import */ var _logic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./logic */ \"./src/Scripts/logic.js\");\n/* harmony import */ var _Components_Main__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Components/Main */ \"./src/Scripts/Components/Main.js\");\n\n\n // Ensure this is correctly imported as a component\n\n\n\n\n\n\n// Select a dedicated container instead of 'body'\nvar container = document.getElementById('app');\nvar root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(container); // Create a root.\n\n// Use the new API to render\nroot.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Components_Header__WEBPACK_IMPORTED_MODULE_2__.Header, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Components_Main__WEBPACK_IMPORTED_MODULE_7__.Main, null)));\n(0,_Components_Modal__WEBPACK_IMPORTED_MODULE_3__.taskModal)();\n(0,_Components_Modal__WEBPACK_IMPORTED_MODULE_3__.labelModal)();\ndocument.addEventListener('DOMContentLoaded', function () {\n  (0,_utils__WEBPACK_IMPORTED_MODULE_4__.populateNavList)(_data__WEBPACK_IMPORTED_MODULE_5__.navItems);\n  console.log('DOM fully loaded and parsed');\n  (0,_logic__WEBPACK_IMPORTED_MODULE_6__.initializeButtons)();\n});\n\n//# sourceURL=webpack://Rotulus-App/./src/Scripts/index.js?");
+
+/***/ }),
+
+/***/ "./src/Scripts/logic.js":
+/*!******************************!*\
+  !*** ./src/Scripts/logic.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   initializeButtons: () => (/* binding */ initializeButtons)\n/* harmony export */ });\n/* harmony import */ var _Components_Modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Components/Modal */ \"./src/Scripts/Components/Modal.js\");\n/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data */ \"./src/Scripts/data.js\");\nfunction _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }\nfunction _nonIterableSpread() { throw new TypeError(\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\nfunction _unsupportedIterableToArray(r, a) { if (r) { if (\"string\" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return \"Object\" === t && r.constructor && (t = r.constructor.name), \"Map\" === t || \"Set\" === t ? Array.from(r) : \"Arguments\" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }\nfunction _iterableToArray(r) { if (\"undefined\" != typeof Symbol && null != r[Symbol.iterator] || null != r[\"@@iterator\"]) return Array.from(r); }\nfunction _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }\nfunction _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }\n\n\nfunction initializeButtons() {\n  var addTaskButton = document.getElementById('addTaskButton');\n  var addButton = document.getElementById('addLabelButton');\n  var navItems = _toConsumableArray(document.querySelectorAll('.nav-item'));\n  submitForm();\n  if (addTaskButton) {\n    addTaskButton.addEventListener('click', function () {\n      document.querySelector('#dialog-task').showModal();\n    });\n  } else {\n    console.error('Add Task Button not found');\n  }\n  if (addButton) {\n    addButton.addEventListener('click', function () {\n      Modal('add'); // Assuming Modal returns a DOM node\n    });\n  } else {\n    console.error('+ Button not found');\n  }\n}\nfunction submitForm() {\n  console.log('Form submit event');\n  var form = document.querySelector('.dialog-form');\n  form.addEventListener('submit', function (e) {\n    e.preventDefault();\n    var taskName = document.getElementById('input-data-task-name').value;\n    var taskDescription = document.getElementById('input-data-task-description').value;\n    var dueDate = document.getElementById('input-data-due-date').value;\n    var label = document.getElementById('input-data-label').value;\n    newTask(taskName, taskDescription, dueDate, label);\n  });\n}\nfunction newTask(taskName, taskDescription, dueDate, label) {\n  var task = {\n    taskName: taskName,\n    taskDescription: taskDescription,\n    dueDate: dueDate,\n    label: label\n  };\n  taskArray.push(task);\n  console.log('New task created');\n  console.log(taskName, taskDescription, dueDate, label);\n}\n\n\n//# sourceURL=webpack://Rotulus-App/./src/Scripts/logic.js?");
+
+/***/ }),
+
+/***/ "./src/Scripts/utils.js":
+/*!******************************!*\
+  !*** ./src/Scripts/utils.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   populateNavList: () => (/* binding */ populateNavList)\n/* harmony export */ });\n/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./data */ \"./src/Scripts/data.js\");\n\nfunction populateNavList(navItems) {\n  var navList = document.querySelector('.nav-list');\n  navList.innerHTML = '';\n  navItems.forEach(function (item) {\n    var li = document.createElement('li');\n    li.className = 'nav-item';\n    li.textContent = item.Label;\n    li.addEventListener('click', function (event) {\n      document.querySelectorAll('.nav-item').forEach(function (navItem) {\n        navItem.classList.remove('active');\n      });\n      event.target.classList.add('active');\n    });\n    navList.appendChild(li);\n  });\n}\nfunction updateNavItemContent(navItem) {\n  var main = document.querySelector('#main');\n  main.innerHTML = '';\n  var filteredItems = _data__WEBPACK_IMPORTED_MODULE_0__.navItems.filter(function (item) {\n    return item.Label === navItem.textContent;\n  });\n  filteredItems.forEach(function (item) {\n    var div = document.createElement('div');\n    div.className = 'main-item';\n    div.textContent = item.Content;\n    main.appendChild(div);\n  });\n}\nfunction populateTaskList() {\n  var taskList = document.querySelector('.task-list');\n  taskList.innerHTML = '';\n  taskArray.forEach(function (task) {\n    var li = document.createElement('li');\n    li.className = 'task-item';\n    li.textContent = task.taskName;\n    taskList.appendChild(li);\n  });\n}\n\n\n//# sourceURL=webpack://Rotulus-App/./src/Scripts/utils.js?");
+
+/***/ }),
+
+/***/ "./src/Assets/portraitJoshP.jpeg":
+/*!***************************************!*\
+  !*** ./src/Assets/portraitJoshP.jpeg ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"images/portraitJoshP.jpeg\");\n\n//# sourceURL=webpack://Rotulus-App/./src/Assets/portraitJoshP.jpeg?");
 
 /***/ }),
 
@@ -108,16 +168,6 @@ eval("/**\n * @license React\n * scheduler.development.js\n *\n * Copyright (c) 
 
 eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs/scheduler.development.js */ \"./node_modules/scheduler/cjs/scheduler.development.js\");\n}\n\n\n//# sourceURL=webpack://Rotulus-App/./node_modules/scheduler/index.js?");
 
-/***/ }),
-
-/***/ "./src/Assets/portraitJoshP.jpeg":
-/*!***************************************!*\
-  !*** ./src/Assets/portraitJoshP.jpeg ***!
-  \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"6b2a0c723c8468acf070.jpeg\";\n\n//# sourceURL=webpack://Rotulus-App/./src/Assets/portraitJoshP.jpeg?");
-
 /***/ })
 
 /******/ 	});
@@ -197,11 +247,6 @@ eval("module.exports = __webpack_require__.p + \"6b2a0c723c8468acf070.jpeg\";\n\
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		__webpack_require__.p = "/dist/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
