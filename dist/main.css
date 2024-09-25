@@ -91,9 +91,8 @@ body {
 #header-container .nav-container .nav-list .nav-item:hover {
   color: white;
 }
-#header-container .nav-container .nav-item-active {
-  background-color: #3634cd;
-  color: white;
+#header-container .nav-container .nav-list .active {
+  color: white !important;
 }
 #header-container .nav-container .label-button {
   display: flex;

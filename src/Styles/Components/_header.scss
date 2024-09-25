@@ -50,13 +50,11 @@
 			.nav-item:hover {
 				color: white;
 			}
+			.active {
+				color: white !important;
+			}
 		}
 	
-
-		.nav-item-active {
-			background-color: $accent-color;
-			color: white;
-		}
 
 		.label-button {
 			@include flex(row, center, center);
