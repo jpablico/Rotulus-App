@@ -34,6 +34,7 @@ function submitForm() {
         const dueDate = document.getElementById('input-data-due-date').value;
         const label = document.getElementById('input-data-label').value;
         newTask(taskName, taskDescription, dueDate, label);
+        document.querySelector('#dialog-task').close();
     });
 }
 
