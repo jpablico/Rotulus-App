@@ -11,4 +11,4 @@ const taskArray = [
 	{ TaskName: 'Task 3', TaskDescription: 'Description 3', DueDate: '2021-12-31', Label: 'Temporary'},
 	{ TaskName: 'Task 4', TaskDescription: 'Description 4', DueDate: '2021-12-31', Label: 'Permanent'}
 ];
-export { navItems }
+export { navItems, taskArray }

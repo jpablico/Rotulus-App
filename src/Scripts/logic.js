@@ -1,5 +1,5 @@
 import { taskModal, labelModal, createLabelSelection } from "./Components/Modal";
-import { navItems } from "./data";
+import { navItems, taskArray } from "./data";
 
 
 
