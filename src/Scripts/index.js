@@ -2,10 +2,9 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Header } from './Components/Header'; // Ensure this is correctly imported as a component
 import { taskModal, labelModal } from './Components/Modal';
-import { populateNavList } from './utils';
-import { navItems } from './data';
-import { initializeButtons } from './logic';
+import { navItems } from './Data/data';
 import { Main } from './Components/Main';
+import { populateNavList } from './Logic/headerlogic';
 
 // Select a dedicated container instead of 'body'
 const container = document.getElementById('app');
@@ -22,7 +21,6 @@ root.render(
 taskModal();
 labelModal();
 document.addEventListener('DOMContentLoaded', function() {
-    populateNavList(navItems);
+  populateNavList();
     console.log('DOM fully loaded and parsed');
-    initializeButtons();
 });

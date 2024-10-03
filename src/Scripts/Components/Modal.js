@@ -1,6 +1,6 @@
 import React from "react";
 import '../../Styles/main.scss';
-import { navItems } from "../data";
+import { navItems } from "../Data/data";
 
 function taskModal(){
 		const dialog = document.createElement('dialog');
@@ -19,7 +19,7 @@ function taskModal(){
 					</div>
 					<div class='button-container'>
 						<button class='button-element' value="cancel">Cancel</button>
-						<button class='button-element' value="default">OK</button>
+						<button class='button-element' value="submit">OK</button>
 					</div>
                 </div>
 			</form>

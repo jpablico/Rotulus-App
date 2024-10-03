@@ -1,9 +1,10 @@
 import React from "react";
 import '../../Styles/main.scss';
+import { taskArray } from "../Data/data";
 
 function Main() {
 	return <main id='main-container'>
-		<h1 className='main-title'>Tasks</h1>
+		
 	</main>;
 }
 
