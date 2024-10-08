@@ -55,7 +55,6 @@ function updateComponent(label) {
 		taskcontainer.appendChild(taskItem);
 	});
 
-	main.appendChild(taskList);
 }
 
 /**const taskList = document.createElement('ul');

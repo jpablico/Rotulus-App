@@ -12,7 +12,7 @@ function Header() {
 		</div>
 	</div>
 	<nav className='nav-container'>
-		<button className='nav-button' id='addTaskButton' >Add task</button>
+		<button className='nav-button' id='addTaskButton'>Add task</button>
 		<ul className='nav-list'>
 
 		</ul>
