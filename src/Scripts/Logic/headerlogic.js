@@ -6,7 +6,6 @@ function populateNavList() {
 		console.error("No elements with class 'nav-list' found.");
 		return;
 	}
-	// var navItems = ["Home", "About", "Contact"];
 	navItems.forEach(item => {
 		const li = document.createElement("li");
 		li.textContent = item;
@@ -26,6 +25,7 @@ function populateNavList() {
 	});
 }
 
+//Updates the main component with the label name
 function updateComponent(label) {
 	const main = document.querySelector('#main-container');
 	main.innerHTML = `<h1>${label}</h1>`;
@@ -35,12 +35,33 @@ function updateComponent(label) {
 		return task.Label === label;
 	});
 	console.log('Filtered tasks:', filteredTasks);
-	const taskList = document.createElement('ul');
+	const taskcontainer = document.createElement('div');
+	taskcontainer.classList.add('task-container');
+	main.appendChild(taskcontainer);
+	filteredTasks.forEach(task => {
+		console.log('Task:', task);
+		const taskItem = document.createElement('div');
+		taskItem.classList.add('task-item');
+		const taskName = document.createElement('h4');
+		taskName.textContent = task.TaskName;
+		const taskDescription = document.createElement('p');
+		taskDescription.textContent = task.TaskDescription;
+		const taskDueDate = document.createElement('p');
+		taskDueDate.textContent = task.DueDate;
+		taskItem.appendChild(taskName);
+		taskItem.appendChild(taskDescription);
+		taskItem.appendChild(taskDueDate);
+		
+		taskcontainer.appendChild(taskItem);
+	});
+
+	main.appendChild(taskList);
+}
+
+/**const taskList = document.createElement('ul');
 	filteredTasks.forEach(task => {
 		const taskItem = document.createElement('li');
 		taskItem.textContent = task.TaskName;
 		taskList.appendChild(taskItem);
-	});
-	main.appendChild(taskList);
-}
+	}); */
 export { populateNavList };
