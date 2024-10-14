@@ -1,8 +1,8 @@
 const navItems = [
-	"All",
-	"Completed",
-	"Temporary",
-	"Permanent"
+	{ Label: "All" },
+	{ Label: "Completed" },
+	{ Label: "Temporary" },
+	{ Label: "Permanent" }
 ];
 
 const taskArray = [

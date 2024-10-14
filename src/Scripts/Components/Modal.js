@@ -42,6 +42,7 @@ function labelModal(){
 		document.body.appendChild(dialog);
 }
 
+// Create a select element with options from the navItems
 function createLabelSelection(navItems) {
 	const formControls = document.querySelector('.label-date-container');
 	// Map the navItems to option elements, assuming each item has a Label property
@@ -57,5 +58,12 @@ function createLabelSelection(navItems) {
 document.addEventListener('DOMContentLoaded', () => {
 	createLabelSelection(navItems);
 });
+
+// Adds labels to navItems array
+function addLabel(label) {
+	
+	navItems.push({ Label: label });
+}
+
 
 export { taskModal, labelModal, createLabelSelection };
