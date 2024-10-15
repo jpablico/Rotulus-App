@@ -12,4 +12,4 @@ Project Structure - Each component of the App will be broken up. And called on l
 10.03.24 - I've been putting the wrong year. Nuked and restarted the logic. Nav list now shows and updates the main container with tasks. Need to polish.
 10. 08.24 - Working on showing tasks with information onto DOM. Task items now show in DOM. Modal buttons work now. 
 10.11.24 - Nothing worked on.
-10.14.24 - Working on task modal to show proper labels. 
+10.14.24 - Working on task modal to show proper labels. Label updates, but need to reset everytime. 

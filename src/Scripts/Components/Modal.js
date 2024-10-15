@@ -1,6 +1,7 @@
 import React from "react";
 import '../../Styles/main.scss';
 import { navItems } from "../Data/data";
+import { populateNavList } from "../Logic/headerlogic";
 
 function taskModal(){
 		const dialog = document.createElement('dialog');
@@ -65,5 +66,24 @@ function addLabel(label) {
 	navItems.push({ Label: label });
 }
 
-
+document.addEventListener('submit', (event) => {
+	event.preventDefault();
+	const form = event.target.closest('form');
+	if (form) {
+		const dialogId = form.closest('dialog').id;
+		if (dialogId === 'dialog-task') {
+			const taskName = form.querySelector('#input-data-task-name').value;
+			const taskDescription = form.querySelector('#input-data-task-description').value;
+			const dueDate = form.querySelector('#input-data-due-date').value;
+			const label = form.querySelector('.select-element').value;
+			navItems.push({ Label: label, TaskName: taskName, TaskDescription: taskDescription, DueDate: dueDate });
+		} else if (dialogId === 'dialog-label') {
+			const labelName = form.querySelector('#input-data').value;
+			addLabel(labelName);
+			populateNavList(navItems);
+			console.log(navItems);
+		}
+		form.closest('dialog').close();
+	}
+});
 export { taskModal, labelModal, createLabelSelection };
