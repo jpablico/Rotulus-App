@@ -3,7 +3,7 @@ import '../../Styles/main.scss';
 import { navItems } from "../Data/data";
 import { populateNavList } from "../Logic/headerlogic";
 
-function taskModal(){
+function taskModalt(){
 		const dialog = document.createElement('dialog');
 		dialog.id = 'dialog-task';
 		dialog.innerHTML = `
@@ -28,9 +28,10 @@ function taskModal(){
 		document.body.appendChild(dialog);
 }
 
-function taskModalTwo(){
+function taskModal(){
+	console.log('taskModal');
 	const dialog = document.createElement('dialog');
-	dialog.id = 'add-task-dialog';
+	dialog.id = 'dialog-task';
 	dialog.innerHTML= `
 		<form id='add-task-form'>
 			<label for="Task-Name">Task Title</label>
@@ -58,6 +59,7 @@ function taskModalTwo(){
 				</div>
 		</form>
 	`;
+	document.body.appendChild(dialog);
 }
 
 function labelModal(){
