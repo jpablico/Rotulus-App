@@ -28,6 +28,38 @@ function taskModal(){
 		document.body.appendChild(dialog);
 }
 
+function taskModalTwo(){
+	const dialog = document.createElement('dialog');
+	dialog.id = 'add-task-dialog';
+	dialog.innerHTML= `
+		<form id='add-task-form'>
+			<label for="Task-Name">Task Title</label>
+				<input type="text" id="Task-Name" required>
+		
+				<label for="Task-Description">Task Description</label>
+				<textarea id="Task-Description" required></textarea>
+		
+				<label for="Task-Due-Date">Due Date</label>
+				<input type="date" id="Task-Due-Date">
+		
+				<label for="Task-Priority">Priority</label>
+				<select id="Task-Priority">
+					<option value="low">Low</option>
+					<option value="medium">Medium</option>
+					<option value="high">High</option>
+				</select>
+		
+				<label for="Task-Notes">Notes</label>
+				<textarea id="Task-Notes"></textarea>
+				<div class="label-container">
+				<div class="button-wrapper">
+					<button type="button" id="Cancel-Task">Cancel</button>
+					<button type="submit" id="Submit-Task">Add Task</button>
+				</div>
+		</form>
+	`;
+}
+
 function labelModal(){
 		const dialog = document.createElement('dialog');
 		dialog.id = 'dialog-label';
@@ -66,6 +98,11 @@ function addLabel(label) {
 	navItems.push({ Label: label });
 }
 
+function clearNavList() {
+	const navList = document.querySelector('.nav-list');
+	navList.innerHTML = '';
+}
+
 document.addEventListener('submit', (event) => {
 	event.preventDefault();
 	const form = event.target.closest('form');
@@ -80,6 +117,7 @@ document.addEventListener('submit', (event) => {
 		} else if (dialogId === 'dialog-label') {
 			const labelName = form.querySelector('#input-data').value;
 			addLabel(labelName);
+			clearNavList();
 			populateNavList(navItems);
 			console.log(navItems);
 		}

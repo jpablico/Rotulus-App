@@ -20,6 +20,9 @@ root.render(
 
 taskModal();
 labelModal();
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
   console.log('Nav and Button initialization');
   populateNavList();

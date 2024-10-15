@@ -35,7 +35,7 @@ function populateNavList() {
 //Updates the main component with the label name
 function updateComponent(label) {
 	const main = document.querySelector('#main-container');
-	main.innerHTML = `<h1>${label}</h1>`;
+	main.innerHTML = `<h1 class="main-label">${label}</h1>`;
 	console.log('Update component with label:', label);
 	const filteredTasks = taskArray.filter(task => {
 		console.log('Checking task:', task);
@@ -50,16 +50,32 @@ function updateComponent(label) {
 		const taskItem = document.createElement('div');
 			taskItem.classList.add('task-item');
 		const taskName = document.createElement('h4');
+			taskName.classList.add('task-name');
 			taskName.textContent = task.TaskName;
+		const hrzLine = document.createElement('hr');
+			hrzLine.classList.add('hrz-line');
 		const taskDescription = document.createElement('p');
 			taskDescription.textContent = task.TaskDescription;
 		const taskDueDate = document.createElement('p');
 		taskDueDate.textContent = task.DueDate;
-
+		const buttonCt = document.createElement('div');
+			buttonCt.classList.add('button-container');
+		const deleteButton = document.createElement('button');
+			deleteButton.classList.add('button-element');
+			deleteButton.textContent = 'Delete';
+		const completeButton = document.createElement('button');
+			completeButton.classList.add('button-element');
+			completeButton.textContent = 'Complete';
+	
 		// Apppends items to the taskItem
 		taskItem.appendChild(taskName);
+		taskItem.appendChild(hrzLine);
 		taskItem.appendChild(taskDescription);
 		taskItem.appendChild(taskDueDate);
+		buttonCt.appendChild(deleteButton);
+		buttonCt.appendChild(completeButton);
+		taskItem.appendChild(buttonCt);
+
 		taskcontainer.appendChild(taskItem);
 
 	});
