@@ -14,3 +14,4 @@ Project Structure - Each component of the App will be broken up. And called on l
 10.11.24 - Nothing worked on.
 10.14.24 - Working on task modal to show proper labels. Label updates, but need to reset everytime. 
 10.15.24 - Label navlist, now properly shows and updates list when a new label is added.
+10.18.24 - Styling modal for task. 

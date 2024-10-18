@@ -35,28 +35,27 @@ function taskModal(){
 	dialog.innerHTML= `
 		<form id='add-task-form'>
 			<label for="Task-Name">Task Title</label>
-				<input type="text" id="Task-Name" required>
+			<input type="text" id="Task-Name" required>
 		
-				<label for="Task-Description">Task Description</label>
-				<textarea id="Task-Description" required></textarea>
+			<label for="Task-Description">Task Description</label>
+			<textarea id="Task-Description" required></textarea>
 		
-				<label for="Task-Due-Date">Due Date</label>
-				<input type="date" id="Task-Due-Date">
+			<label for="Task-Due-Date">Due Date</label>
+			<input type="date" id="Task-Due-Date">
 		
-				<label for="Task-Priority">Priority</label>
-				<select id="Task-Priority">
-					<option value="low">Low</option>
-					<option value="medium">Medium</option>
-					<option value="high">High</option>
-				</select>
-		
-				<label for="Task-Notes">Notes</label>
-				<textarea id="Task-Notes"></textarea>
-				<div class="label-container">
+			<label for="Task-Priority">Priority</label>
+			<select id="Task-Priority">
+				<option value="low">Low</option>
+				<option value="medium">Medium</option>
+				<option value="high">High</option>
+			</select>
+	
+			<div class="label-container">
 				<div class="button-wrapper">
 					<button type="button" id="Cancel-Task">Cancel</button>
 					<button type="submit" id="Submit-Task">Add Task</button>
 				</div>
+			</div>
 		</form>
 	`;
 	document.body.appendChild(dialog);
@@ -69,8 +68,8 @@ function labelModal(){
 			<form class='dialog-form'>
 				<input type="text"  class='input-element' id='input-data' value="Label name...">
 				<div class='button-container'>
-					<button class='button-element' value="cancel">Cancel</button>
-					<button class='button-element' value="default">OK</button>
+					<button class='button-element cancel-btn' value="cancel">Cancel</button>
+					<button class='button-elemen submit-btn' value="Submit">Submit</button>
 				</div>
 			</form>
 		`;

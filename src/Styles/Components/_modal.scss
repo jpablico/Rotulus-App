@@ -1,5 +1,6 @@
 @use '../global' as *;
 
+/*
 #dialog-task {
 	background-color: $background-color;
 	margin: auto;
@@ -49,7 +50,94 @@
 	}
 }
 
+*/
+
+#dialog-task {
+	background-color: $background-color;
+	border: none;
+	border-radius: 25px;
+	padding: 1rem;
+	margin: auto;
+	#add-task-form {
+		@include flex(column, start, none);
+		border: none;
+		gap: .2rem;
+		.label-container {
+			@include flex(column, center, center);
+			width: 100%;
+			.button-wrapper {
+				@include flex(row, space-between, center);
+				flex: 1;
+				width: 100%;
+				gap: 5px;
+
+				#Cancel-Task {
+					
+					color: $text-color-light;
+					border: none;
+					border-radius: 5px;
+					padding: .5rem 1rem;
+					cursor: pointer;
+					&:hover {
+						background-color: red;
+					}
+				}
+				#Submit-Task {
+					background-color: $primary-color;
+					color: #000000;
+					border: none;
+					border-radius: 5px;
+					padding: .5rem 1rem;
+					cursor: pointer;
+					&:hover {
+						background-color: green;
+					}
+				}
+			}
+		}
+	}
+}
 
 #dialog-label {
-	background-color: red;
+	margin: auto;
+	background-color: $background-color;
+	border: none;
+	padding: 1rem;
+	border-radius: 15px;
+	
+	.dialog-form {
+		@include flex(column, center, center);
+		gap: .2rem;
+
+		.button-container {
+			@include flex(row, space-between, center);
+			width: 100%;
+			gap: 5px;
+			
+			.cancel-btn {
+				background-color: red;
+				color: $text-color-light;
+				border: none;
+				border-radius: 5px;
+				padding: .2rem .5rem;
+				cursor: pointer;
+				&:hover {
+					background-color: #ff0000;
+				}
+			}
+	
+			.submit-btn {
+				flex: 1;
+				background-color: $primary-color;
+				color: $text-color-light;
+				border: none;
+				border-radius: 5px;
+				padding: .2rem .5rem;
+				cursor: pointer;
+				&:hover {
+					background-color: $accent-color;
+				}
+			}
+		}
+	}
 }

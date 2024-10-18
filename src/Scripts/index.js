@@ -29,3 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
   buttonInit();
     console.log('DOM fully loaded and parsed');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+	const modal = document.getElementById('dialog-task');
+	//modal.showModal();
+	}
+);
