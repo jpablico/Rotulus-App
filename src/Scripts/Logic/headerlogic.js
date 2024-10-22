@@ -32,7 +32,7 @@ function populateNavList() {
 	});
 }
 
-//Updates the main component with the label name
+//Updates the main component with the label name and task
 function updateComponent(label) {
 	const main = document.querySelector('#main-container');
 	main.innerHTML = `<h1 class="main-label">${label}</h1>`;
